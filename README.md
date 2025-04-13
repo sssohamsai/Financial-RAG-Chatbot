@@ -60,6 +60,8 @@ This is where I built the entire pipeline — from scratch.
 ###  Prerequisites (Install manually):
 - **Docker** → [Get Docker](https://www.docker.com/get-started)
 - **Ollama (for LLM)** → [Get Ollama](https://ollama.com/download)
+- **Download** the chunks from here  https://drive.google.com/file/d/1pBchnfNXnAm31QVltBM8lNA3qyeig65g/view?usp=sharing and make sure all py files and these chunks are in one folder thanks !
+
 
 ---
 
