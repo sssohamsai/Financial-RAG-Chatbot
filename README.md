@@ -1,6 +1,6 @@
-# 🧠 Financial RAG Chatbot (Built on Screener Data)
+#  Financial RAG Chatbot (Built on Screener Data)
 
-Hi, I have created this chatbot by implementing **Retrieval-Augmented Generation (RAG)** on company financial data scraped from [Screener.in](https://www.screener.in/). Please enjoy the ride through this chatbot 🚂
+Hi, I have created this chatbot by implementing **Retrieval-Augmented Generation (RAG)** on company financial data scraped from [Screener.in](https://www.screener.in/). Please enjoy the ride through this chatbot 
 
 It lets you ask natural questions like:
 > What is the ROE of Infosys in 2024?  
@@ -9,7 +9,7 @@ It lets you ask natural questions like:
 
 ---
 
-## 📆 WEEK 1: The First Station 🛤️
+## WEEK 1: The First Station 
 
 This week I learned about all the amazing ways your AI bot can understand *text* — whether you're talking about "how cool you are" or just yapping random stuff like *you usually do* 😂
 
@@ -23,7 +23,7 @@ I explored:
 
 ---
 
-## 🧪 WEEK 2: Getting Hands Dirty with RAG
+##  WEEK 2: Getting Hands Dirty with RAG
 
 So this is when things got serious.
 
@@ -40,11 +40,11 @@ I explored:
 
 ---
 
-## 🚀 WEEK 3–5: Implementation Phase
+##  WEEK 3–5: Implementation Phase
 
 This is where I built the entire pipeline — from scratch.
 
-#### ✅ Features
+####  Features
 - Uses **Fin-MPNET** embeddings trained on financial text
 - Embeds data extracted from Screener's Excel format
 - Stores vectors in **Qdrant** (via Docker)
@@ -55,15 +55,15 @@ This is where I built the entire pipeline — from scratch.
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
-### 💾 Prerequisites (Install manually):
+###  Prerequisites (Install manually):
 - **Docker** → [Get Docker](https://www.docker.com/get-started)
 - **Ollama (for LLM)** → [Get Ollama](https://ollama.com/download)
 
 ---
 
-### 🧠 Run the bot
+###  Run the bot
 
 Clone the repo and run:
 ```bash
