@@ -1,24 +1,70 @@
-# Financial-RAG-Chatbot
-Hi ,I have created this chatbot by implementing RAG on a data extracted from screener.in Please enjoy the ride through this chatbot 
+# 🧠 Financial RAG Chatbot (Built on Screener Data)
 
-#WEEK1
--So this is the first station week1... welcome guys..
-here I had learnt about various ways of how can your AI bot understand "text" data whether you are talking about how "cool" you are or just yapping like "you" usually do!!
-so there are many methods that you can do ... 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - -- - - - - - - - - - - - - - - --  - - - - - - - - - - - -- -  - - - - -- - - - - - - - - - - - - - - - -- - - - - - - -
-1) TF IDF
-2) BM-25
-3) GloVE Embeddings
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - -- - - - - - - - - - - - - - - --  - - - - - - - - - - - -- -  - - - - -- - - - - - - - - - - - - - - - -- - - - - - - -
-I shall have attached somewhere these ppts on them .... check resources folder i guess
+Hi, I have created this chatbot by implementing **Retrieval-Augmented Generation (RAG)** on company financial data scraped from [Screener.in](https://www.screener.in/). Please enjoy the ride through this chatbot 🚂
 
+It lets you ask natural questions like:
+> What is the ROE of Infosys in 2024?  
+> Who had the average net profit in last 3 quarters for Tata Steel?  
+> What is the 5-year EPS growth of Marico?
 
-#WEEK2
--So this is when I start getting my hands messy with RAG. Now RAG is not just any random 3 letter word but something very crazy that can help you achieve your dream of making a chatbot .
-Ever imagined this chat gpt that u use everyday that can answer all the range of questions from "how cool you are?" to "what is the answer for this exam question?" how could some bunch of random guys code it all up
-well, RAG is not exactly what chat gpt does but you can use chat gpt to help u answer questions about data that chat gpt hasnt been trained on. It can be anything from your emails to your college profs boring lecture notes.
+---
 
-Here is a google colab link on trying to implement RAG on code - https://colab.research.google.com/drive/1HTPq8iUzDUpg-jzoBB8_tCw_tpH77gMm?usp=sharing 
+## 📆 WEEK 1: The First Station 🛤️
 
-all the resources used to learn the theory part i shall add in the resources folder.
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - -- - - - - - - - - - - - - - - --  - - - - - - - - - - - -- -  - - - - -- - - - - - - - - - - - - - - - -- - - - - - - -
+This week I learned about all the amazing ways your AI bot can understand *text* — whether you're talking about "how cool you are" or just yapping random stuff like *you usually do* 😂
+
+I explored:
+- **TF-IDF**
+- **BM-25**
+- **GloVe embeddings**
+- Why these matter for vector search & information retrieval
+
+📁 Check `resources/` for slides, notes & reference links
+
+---
+
+## 🧪 WEEK 2: Getting Hands Dirty with RAG
+
+So this is when things got serious.
+
+RAG isn’t just another 3-letter buzzword — it's the bridge that lets a language model answer questions about **data it was never trained on**.  
+Imagine ChatGPT suddenly knowing all your boring Excel files — yeah, that's RAG.
+
+I explored:
+- How to split queries into subqueries
+- How to chunk and embed structured financial data
+- How to connect retriever + LLM for dynamic answers
+
+📎 Here's a playground Colab where I tested RAG in Python:  
+👉 [Colab: Playing with RAG](https://colab.research.google.com/drive/1HTPq8iUzDUpg-jzoBB8_tCw_tpH77gMm?usp=sharing)
+
+---
+
+## 🚀 WEEK 3–5: Implementation Phase
+
+This is where I built the entire pipeline — from scratch.
+
+#### ✅ Features
+- Uses **Fin-MPNET** embeddings trained on financial text
+- Embeds data extracted from Screener's Excel format
+- Stores vectors in **Qdrant** (via Docker)
+- Splits complex queries into **smart subqueries** using Mistral via Ollama
+- Retrieves top-k relevant chunks for each subquery
+- Assembles the final context
+- Generates answers via **Mistral LLM**
+
+---
+
+## ⚙️ Installation & Setup
+
+### 💾 Prerequisites (Install manually):
+- **Docker** → [Get Docker](https://www.docker.com/get-started)
+- **Ollama (for LLM)** → [Get Ollama](https://ollama.com/download)
+
+---
+
+### 🧠 Run the bot
+
+Clone the repo and run:
+```bash
+python run_this.py
